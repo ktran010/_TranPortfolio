@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>
+            Archive of Digital Works
+        </title>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <link href="../CSS/slideshow.css" rel="stylesheet" type="text/css">
+        <link href="../CSS/headernav.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans&family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+        <script>  
+            window.onbeforeunload = function () {
+                window.scrollTo(0, 0);
+            }; 
+        </script>
+    </head>
+
+    <body>
+        <header class="container">
+            <div class="fullwidthheader">
+                <div class="glitch">
+                    <img src="../Projects/Digital/GlitchResume/Name.png" alt="Name with Glitch Effect">
+                    <div class="glitch__layers">
+                        <div class="glitch__layer"></div>
+                        <div class="glitch__layer"></div>
+                        <div class="glitch__layer"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li id="ontab">
+                    <a href="digital_works.html">DIGITAL WORKS</a>
+                </li>
+                <li>
+                    <a href="physical_works.html">PHYSICAL WORKS</a>
+                </li>
+                <li>
+                    <a href="resume.html">RESUME</a>
+                </li>
+                <li>
+                    <a href="contact.html">CONTACT</a>
+                </li>
+            </ul>
+            <div id="divider"></div>
+        </nav>
+        
+        <div class="slideshow-container">
+            <div class="mySlides fade fullwidthheader">
+              <div class="numbertext">1 / 7</div>
+              <img src="../Projects/Digital/slideshow1.jpg" alt="Accordian Book: Slide 1">
+              <div class="text">TYPOGRPHIC ACCORDION BOOK: NOMBE'S <i>MISS MIRAGE</i></div>
+            </div>
+            
+            <div class="mySlides fade fullwidthheader">
+              <div class="numbertext">2 / 7</div>
+              <img src="../Projects/Digital/slideshow2.jpg" alt="Accordian Book: Slide 1">
+              <div class="text">TYPOGRPHIC ACCORDION BOOK: NOMBE'S <i>MISS MIRAGE</i></div>
+            </div>
+            
+            <div class="mySlides fade fullwidthheader">
+              <div class="numbertext">3 / 7</div>
+              <img src="../Projects/Digital/slideshow3.jpg" alt="Accordian Book: Slide 1">
+              <div class="text">TYPOGRPHIC ACCORDION BOOK: NOMBE'S <i>MISS MIRAGE</i></div>
+            </div>
+
+            <div class="mySlides fade fullwidthheader">
+                <div class="numbertext">4 / 7</div>
+                <img src="../Projects/Digital/slideshow4.jpg" alt="Accordian Book: Slide 1">
+                <div class="text">TYPOGRPHIC ACCORDION BOOK: NOMBE'S <i>MISS MIRAGE</i></div>
+            </div>
+
+            <div class="mySlides fade fullwidthheader">
+                <div class="numbertext">5 / 7</div>
+                <img src="../Projects/Digital/slideshow5.jpg" alt="Accordian Book: Slide 1">
+                <div class="text">TYPOGRPHIC ACCORDION BOOK: NOMBE'S <i>MISS MIRAGE</i></div>
+            </div>
+
+            <div class="mySlides fade fullwidthheader">
+                <div class="numbertext">6 / 7</div>
+                <img src="../Projects/Digital/slideshow6.jpg" alt="Accordian Book: Slide 1">
+                <div class="text">TYPOGRPHIC ACCORDION BOOK: NOMBE'S <i>MISS MIRAGE</i></div>
+            </div>
+
+            <div class="mySlides fade fullwidthheader">
+                <div class="numbertext">7 / 7</div>
+                <img src="../Projects/Digital/slideshow7.jpg" alt="Accordian Book: Slide 1">
+                <div class="text">TYPOGRPHIC ACCORDION BOOK: NOMBE'S <i>MISS MIRAGE</i></div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <br>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slides[slideIndex-1].style.display = "block";  
+            }
+        </script>
+
+        <div class="slideshow-container">
+            <div class="halfwidth"> <!--digimg4-->
+                <figure>
+                    <img class="regularimg" src="../Projects/Digital/digimg4.1.JPG" alt="Graphic Design: Distortion">
+                    <figcaption>DISTORTION</figcaption>
+                </figure>
+            </div>
+            <div class="halfwidth"> <!--digimg5-->
+                <figure>
+                    <img class="regularimg" src="../Projects/Digital/digimg5.JPG" alt="Graphic Design: Symmetry">
+                    <figcaption>SYMMETRY</figcaption>
+                </figure>
+            </div>
+
+
+
+            <div class="fullwidth"> <!--digimg6-->
+                <figure>
+                    <img class="regularimg" src="../Projects/Digital/digimg6.1.jpg" alt="Graphic Design: Asymmetry">
+                    <figcaption>ASYMMETRY</figcaption>
+                </figure>
+            </div>
+
+
+
+            <div class="fullwidth"> <!--digimg7-->
+                <figure>
+                    <img class="regularimg" src="../Projects/Digital/digimg7.jpg" alt="Graphic Design: Movement">
+                    <figcaption>MOVEMENT</figcaption>
+                </figure>
+            </div>
+
+
+
+            <div class="halfwidth"> <!--digimg4-->
+                <figure>
+                    <img class="regularimg" src="../Projects/Digital/digimg3.JPG" alt="Graphic Design: Unknown">
+                    <figcaption>UNKNOWN</figcaption>
+                </figure>
+            </div>
+            <div class="halfwidth"> <!--digimg5-->
+                <figure>
+                    <img class="regularimg" src="../Projects/Digital/digimg8.jpg" alt="Graphic Design: Tachyon">
+                    <figcaption>TACHYON</figcaption>
+                </figure>
+            </div>
+
+
+
+            <div class="fullwidth">
+                <figure>
+                    <img class="regularimg" src="../Projects/Digital/Katherine_Tran_PosterMailerFinalJust.png" alt="Graphic Design: Poster Mailer Front">
+                    <figcaption>Poster Mailer: Front View</figcaption>
+                </figure>
+            </div>
+            <div class="fullwidth">
+                <figure>
+                    <img class="regularimg" src="../Projects/Digital/Katherine_Tran_PosterMailerFinalJust2.png" alt="Graphic Design: Poster Mailer Back">
+                    <figcaption>Poster Mailer: Back View</figcaption>
+                </figure>
+            </div>
+
+
+
+            <div class="fullwidthheader"> <!--digimg4-->
+                <h2>
+                    HYPERTEXT NARRATIVE
+                </h2>
+                <br>
+                <p>
+                    Using HTML, CSS, and JavaScript, I created a simple game that spans across dozens of webpages, featuring CSS animations and a variety of user interactions. The objective is to bake a cake with a cute little friend named Bao. The cake differs depending on the user's choices—as will Bao's reactions!
+                </p>
+                <h3>
+                    <a href="../../1_HypertextNarrative/html_pages/1wakeup.html" target="_blank" rel="noopener noreferrer">PLAY GAME</a>
+                </h3>
+            </div>
+            <div class="fullwidth"> <!--digimg5-->
+                <figure>
+                    <img class="regularimg" src="../Projects/Digital/digimg2.JPG" alt="Web Project: Hypertext Narrative">
+                </figure>
+            </div>
+
+
+
+            <div class="fullwidthheader"> <!--digimg4-->
+                <h2>
+                    JAVASCRIPT GAME
+                </h2>
+                <br>
+                <p>
+                    Again utilizing HTML, CSS, and JavaScript, I created a small game called "Kitten Catcher", where the objective is to click on all of the kittens as fast as possible. The time elapsed is the player's score. The shortest time so far is 10.14 seconds . . . can you beat it?
+                </p>
+                <h3>
+                    <a href="../../3_JavascriptGame/kittenCatcher.html" target="_blank" rel="noopener noreferrer">PLAY GAME</a>
+                </h3>
+            </div>
+            <div class="fullwidth"> <!--digimg5-->
+                <figure>
+                    <img class="regularimg" src="../Projects/Digital/digimg2.5.JPG" alt="Web Project: Javascript Game">
+                </figure>
+            </div>
+
+
+
+            <div class="fullwidthheader"> <!--digimg4-->
+                <h2>
+                    C++ TERMINAL GAME
+                </h2>
+                <br>
+                <p>
+                    With my working knowledge of object-oriented programming, I developed a dating simulator that runs in terminal. The game begins with the player's input of their name and description of themself that they can later view in their profile. The player has the option to interact with four different characters I've created, each with their own unique personality and story. Depending on the player's choices, they can increase their affection level with the characters they interact with. The game concludes with the user's decision to send a letter to the person of their choice, and obtain a specific ending based on their affection levels.
+                </p>
+                <h3>
+                    <a href="https://github.com/ktran010/Pocket-Partner.git" target="_blank" rel="noopener noreferrer">DOWNLOAD FROM GITHUB</a>
+                </h3>
+            </div>
+            <div class="fullwidth"> <!--digimg5-->
+                <figure>
+                    <img class="regularimg" src="../Projects/Digital/digimg1.JPG" alt="C++ Terminal Game">
+                </figure>
+            </div>
+        </div>
+
+        <footer>
+            <div class="fullwidthheader"> <!--acrylic3-->
+                <p class="copyright">
+                    COPYRIGHT ©2021 KATHERINE TRAN | GIFs from giphy.com
+                </p>
+            </div>
+        </footer>
+    
+    </body>
+
+
+</html>
+
+

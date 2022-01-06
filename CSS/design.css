@@ -1,0 +1,151 @@
+body{
+    background-color: black;
+    margin:0;
+	animation: load-in ease 0.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes load-in{
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+img{
+    width: 100%;
+}
+
+.regularimg{
+	width: 100%;
+	height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:link{
+    color: white;
+}
+
+a:hover{
+    color: rgba(255, 255, 255, 0.603);
+}
+
+a:visited{
+    color: rgba(255, 255, 255, 0.603);
+}
+
+a:active{
+    color: rgb(194, 208, 255);
+}
+
+figcaption{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+    font-size:medium;
+}
+
+h2{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 4em;
+    text-align: center;
+    color: white;
+}
+
+h3{
+  font-family: 'Source Code Pro', monospace;
+  text-align: center;
+  color: white;
+}
+
+p{
+    font-family: 'Source Code Pro', monospace;
+    font-size: large;
+    text-align: center;
+    color: white;
+}
+
+.copyright{
+    font-family: 'Source Code Pro', monospace;
+    font-size: small;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.container{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0px auto;
+    background-color: black;
+    padding: 0px;
+    box-sizing:border-box;
+
+    display: grid;
+    grid-template-columns: repeat(12, 8.33%);
+}
+
+.halfwidth{
+    border-style:double;
+    border-bottom-width: 10px;
+    border-color: white;
+    margin: 10px;
+    padding: 0px;
+    text-align: center;
+    color:white;
+    grid-column-end: span 6;
+}
+
+.fullwidth{
+    background-color: rgba(255, 255, 255, 0.904);
+    box-shadow: 5px 5px rgb(153, 153, 153);
+    margin: 10px;
+    padding: 0px;
+    text-align: center;
+    grid-column-end: span 12;
+}
+
+.fullwidthheader{
+    background: url(../Projects/Gifs/giphy2.gif);
+    margin: 10px;
+    padding: 0px;
+    text-align: center;
+    grid-column-end: span 12;
+    color: rgba(255, 255, 255, 0.623);
+}
+
+.fullwidthresume{
+  background: url(../Projects/Gifs/giphy12.gif);
+  background-size: cover;
+  margin: 10px;
+  padding: 0px;
+  text-align: center;
+  grid-column-start: 2;
+  grid-column-end: 12;
+}
+
+.fullwidthdownload{
+  background: url(../Projects/Gifs/giphy2.gif);
+  margin: 10px;
+  padding: 0px;
+  text-align: center;
+  grid-column-start: 2;
+  grid-column-end: 12;
+}
+
+/* MEDIA QUERY FOR SMALLER BROWSER WINDOWS */
+@media all and (max-width: 1000px)
+{
+	.halfwidth{
+		grid-column-end: span 12;
+	}
+    img{
+        height:100%;
+    }
+}

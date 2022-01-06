@@ -1,0 +1,34 @@
+REFERENCES
+-----------------------------------------------------------
+Borders: https://www.w3schools.com/css/css_border.asp
+
+Box Shadows: https://www.w3schools.com/cssref/css3_pr_box-shadow.asp
+
+Open in New Window (target="_blank" rel="noopener noreferrer"): https://www.freecodecamp.org/news/how-to-use-html-to-open-link-in-new-tab/
+
+
+
+
+
+GIFs
+-----------------------------------------------------------
+https://giphy.com/
+https://giphy.com/gifs/motion-graphics-test-pattern-sonochromia-3oEduUO7EyW1oSeNkQ
+
+
+
+
+
+IMAGE SLIDESHOW (3rd Party Snippet)
+-----------------------------------------------------------
+https://www.w3schools.com/howto/howto_js_slideshow.asp
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow
+
+
+
+
+
+GLITCH EFFECT FOR HEADER AND LOGO (3rd Party Snippet)
+-----------------------------------------------------------
+https://www.youtube.com/watch?v=xhVQkrCdD4Q
+https://codepen.io/MinzCode/pen/YzqwbQV
