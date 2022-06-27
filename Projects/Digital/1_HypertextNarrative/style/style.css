@@ -1,0 +1,472 @@
+/*background images*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.yourhousebackground{
+    background: url(../images/YourHouse.jpg) no-repeat center center fixed;
+    background-color: #c7e0ff;
+    background-size: cover;
+}
+
+.baohousebackground{
+    background: url(../images/BaoHouse.jpg) no-repeat center center fixed;
+    background-color: #ffb6c1;
+    background-size: cover;
+}
+
+.blackbackground{
+    background-color:black;
+}
+
+
+
+
+
+/*text*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+p{
+    font-family: 'Cute Font', cursive;
+    font-size:2.5em;
+    text-align: center;
+    /*add text color?*/
+}
+
+ul{
+    display:inline-block;
+    margin:0px;
+    padding:0px;
+}
+
+ol{
+    display:inline-block;
+    margin:0px;
+    padding:0px;
+}
+
+.whitetext{
+    color:white;
+}
+
+.recipe{
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size:x-large;
+    /*change recipe paper color?*/
+}
+
+#right{
+    font-family: 'Cute Font', cursive;
+    font-size: 4em;
+    color: white;
+    /*change background color to black and text to white with button click?*/
+}
+
+#toobad{
+    font-family: 'Cute Font', cursive;
+    color: #ee2a26;
+    font-size: 4em;
+}
+
+#regret{ /*add fade to red*/
+    font-family: 'Cute Font', cursive;
+    color: #ee2a26;
+    font-size: 1.55em;
+}
+
+
+
+
+
+/*speech bubbles*/ /* 3rd Party Code Snippet for speech bubble triangle (also to get started on creating the box) */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.box1 { /*wakeup page*/
+    width: 900px;
+    margin: 50px auto;
+    border: 20px double whitesmoke;
+    padding: 20px;
+    text-align: center;
+    font-weight: 900;
+    color: #fff;
+    font-family: arial;
+    position: relative;
+    opacity: 0;
+    animation: fadeInAnimation ease-in 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; 
+}
+
+
+.box2 { /*RIGHT*/
+    width: 900px;
+    margin: 50px auto;
+    border: 20px ridge white;
+    background: none;
+    padding: 20px;
+    text-align: center;
+    font-weight: 900;
+    color: #fff;
+    font-family: arial;
+    position: relative;
+}
+
+.box4 { /* too bad */
+    width: 900px;
+    margin: 50px auto;
+    border: 20px ridge #ee2a26;
+    background: none;
+    padding: 20px;
+    text-align: center;
+    font-weight: 900;
+    color: #fff;
+    font-family: arial;
+    position: relative;
+}
+  
+.box3 { /*normal speech bubble */
+    width: 900px;
+    margin: 50px auto;
+    background: linear-gradient(to top right, #ffa0ae, #fb7488);
+    border-radius:15px;
+    padding: 20px;
+    text-align: center;
+    font-weight: 900;
+    color: #fff;
+    font-family: arial;
+    box-shadow: 2px -7px #fb7488;
+    position:relative;
+}
+.sb3:before { /*normal speech bubble triangle */
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid #ffa0ae;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #ffa0ae;
+    border-bottom: 10px solid transparent;
+    left: 19px;
+    bottom: -19px;
+  }
+
+
+
+
+
+/*buttons*/ /* 3rd Party code snippet for box-shadow numbers and transform rule */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+.button3{ /*normal button*/
+ /* (…) buttons, Buttons with words (recipe, view pockets, choices, etc.)
+   pink, hover turn cream, push animation, white text */
+    font-size: 35px;
+    font-family: 'Cute Font', cursive;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+    padding: 15px 20px;
+    outline: none;
+    border: 10px double #fb7488;
+    background-color:#ffa0ae;
+    color: white;
+    box-shadow: 0 9px #fb7488;
+}
+.button3:hover{ /*normal button*/
+    background-color:#ffbea8;
+}
+.button3:active{ /*normal button*/
+    background-color:#ffbea8;
+    box-shadow: 0 5px #a03d4c;
+    transform: translateY(4px);
+}
+
+
+.button1{ /*wakeup */
+/* RIGHT: no background color, white border, white text, 
+hover turns border and text red, push animation */
+    font-size: 35px;
+    font-family: 'Cute Font', cursive;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+    padding: 15px 20px;
+    outline: none;
+    border: 10px solid #d6d6d6;
+    background: none;
+    color: #d6d6d6;
+}
+.button1:hover{ /*wakeup */
+    border-color: white;
+    background: none;
+    color:white;
+}
+.button1:active{ /*wakeup */
+    background: none;
+    box-shadow: 0 5px #a1a1a1;
+    transform: translateY(4px);
+}
+
+
+.buttonrecipe{ /* recipe */
+/* RIGHT: no background color, white border, white text, 
+hover turns border and text red, push animation */
+   font-size: 35px;
+   font-family: 'Cute Font', cursive;
+   border-radius: 30px;
+   text-align: center;
+   cursor: pointer;
+   padding: 15px 20px;
+   outline: none;
+   border: 10px double #7badeb;
+   background-color:#a3c5ee;
+   color: white;
+   box-shadow: 0 9px #7badeb;
+}
+.buttonrecipe:hover{ /* recipe */
+   background-color:#a4e2c3;
+}
+.buttonrecipe:active{ /* recipe */
+   background-color:#a4e2c3;
+   box-shadow: 0 5px #5786c0;
+   transform: translateY(4px);
+}
+
+
+.button2{ /*RIGHT button */
+/* RIGHT: no background color, white border, white text, 
+hover turns border and text red, push animation */
+    font-size: 35px;
+    font-family: 'Cute Font', cursive;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+    padding: 15px 20px;
+    outline: none;
+    border: 10px solid white;
+    background: none;
+    color: white;
+}
+.button2:hover{/*RIGHT button */
+    border-color: #ee2a26;
+    background: none;
+    color:#ee2a26;
+}
+.button2:active{ /*RIGHT button */
+    background: none;
+    box-shadow: 0 5px #a03d4c;
+    transform: translateY(4px);
+}
+
+
+.button4{ /*TOO BAD button */
+/* TOO BAD/WORST ENDING: no background color, 
+red border, red text, shaky when hover, push animation */
+    font-size: 35px;
+    font-family: 'Cute Font', cursive;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+    padding: 15px 20px;
+    outline: none;
+    border: 10px solid #ee2a26;
+    background: none;
+    color: #ee2a26;
+}
+.button4:hover{/*RIGHT button */
+border-color: #ee2a26;
+background: none;
+color:#ee2a26;
+}
+.button4:active{ /*RIGHT button */
+background: none;
+box-shadow: 0 5px #a03d4c;
+transform: translateY(4px);
+}
+
+
+
+
+
+/*layout*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.buttonfloat{ /*wake up page (button) */
+    width: 660px;
+    height:5px;
+    float: right;
+}
+
+
+#BaoMixing{ /*Bao image in mixing stage */
+    float: left;
+    margin-left:200px;
+}
+
+#BaoAngry{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.flex-container{ /* choices */ /* 3rd Party code snippet for margin numbers */
+    display: flex;
+    flex-direction: row;
+    background: none;
+    margin: 0 -10px;
+}
+
+.flex-container > div{ /* choices */
+    background: none;
+    width: 200px;
+    text-align: center;
+    line-height: 5px;
+    font-size: 30px;
+    margin: 0 170px;
+}
+
+
+.flex-container-ending{ /* choices */
+    display: flex;
+    flex-direction: row;
+    background: none;
+    margin: 0 -10px;
+}
+
+.flex-container-ending > div{ /* choices */
+    background: none;
+    width: 200px;
+    text-align: center;
+    line-height: 5px;
+    font-size: 30px;
+    margin: 0 200px;
+}
+
+
+
+
+
+/*modal for view recipe*/ /* 3rd Party Code Snippet */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgb(0,0,0,0.5); /* has opacity */
+  }
+
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    color: black;
+    /* background-color: #8dd3b0; */
+    background-image: url(../images/notepad.jpg);
+    margin: auto;
+    padding-bottom: 30px;
+    padding-right: 10px;
+    border-radius: 30px;
+    border: 10px double #7badeb; 
+    text-align: center;
+    list-style-position:inside;
+    width: 30%;
+    box-shadow: 0 4px 8px 0 rgba(84,134,192,0.2),0 6px 20px 0 rgba(84,134,192,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .closeButton {
+    color: #7badeb;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  
+  .closeButton:hover,
+  .closeButton:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal-body {padding: 2px 16px;}
+  
+
+
+
+
+/*drag and drop for mixing ingredients*/ /* 3rd Party Code Snippet */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* draggable targets */
+[data-draggable="target"]
+{
+    float:left;
+    width: 350px;
+    height: 350px;
+    padding: 20px;
+    margin:20px;
+    background: url(../images/Bowl.png) center center no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    border: 10px double #fb7488;
+}
+
+/* draggable items */
+[data-draggable="item"]
+{
+  display:block;
+  align-content: center;
+  
+  margin:0 0 2px 0;
+  padding:0.2em 0.4em;
+  
+  border-radius:0.2em;
+  
+  line-height:1.3;
+}
+
+
+
+
+
+/* input for setting the oven*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#temperature{
+    float:left;
+    font-family: 'Cute Font', cursive;
+    font-size:4em;
+    width:150px;
+    color:white;
+    background-color: #fb7488;
+    text-align:center;
+    border-radius:30px;
+    border: 10px double #ffa0ae;
+    box-shadow: 0 9px #fb7488;
+}
+
+#temperature:focus{
+    outline:none;
+}

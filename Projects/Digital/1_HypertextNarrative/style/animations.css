@@ -1,0 +1,51 @@
+/*fade in animations */
+/*----------------------------------------------------*/
+
+#yawn{
+    opacity: 0;
+    animation: fadeInAnimation ease-in 2s; 
+    animation-delay: 2s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+}
+
+.delay4_5{
+    opacity: 0;
+    animation: fadeInAnimation ease-in 2s; 
+    animation-delay: 4.5s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+}
+
+.delay7{
+    opacity: 0;
+    animation: fadeInAnimation ease-in 2s; 
+    animation-delay: 7s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+}
+
+.delay9_5{
+    opacity: 0;
+    animation: fadeInAnimation ease-in 2s; 
+    animation-delay: 9.5s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+}
+
+#downstairsbutton{
+    opacity: 0;
+    animation: fadeInAnimation ease-in 2s; 
+    animation-delay: 12s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+    } 
+} 
