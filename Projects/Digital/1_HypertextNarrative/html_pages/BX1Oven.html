@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<!--CHANGE BACKGROUND IMAGE TO BAOS HOUSE-->
+
+
+<html lang="en">
+    <head>
+        <title>
+            BX1 - Oven
+        </title>
+        <meta charset ="utf-8">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="../style/style.css">
+
+        <script>
+            function myFunction() {
+            var x, text;
+    
+            // Get the value of the input field with id="numb"
+            x = document.getElementById("temperature").value;
+    
+            // If x is Not a Number or less than one or greater than 10
+            if (isNaN(x) || x !=350) {
+                text = "Try again!";
+            } else {
+                text = "Correct!";
+            }
+            document.getElementById("temperature_check").innerHTML = text;
+            }
+        </script>
+    </head>
+    
+    <body class="baohousebackground">
+        <div class="box3 sb3">        
+            <p>
+                BAO: Now, let's set the temperature for the oven! Lucky for you, with my super-star baking knowledge, I know it should be 350 degrees!
+                <br>
+                Let me know when you're DONE~
+            </p>
+        </div>
+
+        <div id="BaoMixing"> <!--ANIMATION FOR BAO SLIDING OVER TO THE LEFT AND TEXT AND DIALOGUE SLIDING OVER-->
+            <p>
+                <img src="../images/BaoNeutral1.png" width = 700 height = 500 alt="Neutral Bao">
+            </p>
+        </div>
+
+        <input id="temperature">
+        <button id="setTempButton" class="button3" onclick="myFunction()"><b>Set temperature</b></button>
+        <!--ON BUTTON CLICK (...)-->
+        <p id="temperature_check"></p>
+
+        <form action="BX1Time.html">
+            <button type="submit" class="button3"><b>DONE</b></button>
+        </form>
+    </body>
+</html>

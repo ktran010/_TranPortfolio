@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<!--CHANGE BACKGROUND IMAGE TO BAOS HOUSE-->
+
+
+<html lang="en">
+    <head>
+        <title>
+            AW1 - Eggs
+        </title>
+        <meta charset ="utf-8">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="../style/style.css">
+
+        <!--script for drag and drop-->
+        <script>
+            (function()
+            { 
+                //get the collection of draggable items and add their draggable attribute
+                for(var 
+                items = document.querySelectorAll('[data-draggable="item"]'), 
+                len = items.length, 
+                i = 0; i < len; i ++)
+                {
+                    items[i].setAttribute('draggable', 'true');
+                }
+          
+                //variable for storing the dragging item reference 
+                //this will avoid the need to define any transfer data 
+                //which means that the elements don't need to have IDs 
+                var item = null;
+            
+                //dragstart event to initiate mouse dragging
+                document.addEventListener('dragstart', function(e)
+                {
+                    //set the item reference to this element
+                    item = e.target;
+                    
+                    //we don't need the transfer data, but we have to define something
+                    //otherwise the drop action won't work at all in firefox
+                    //most browsers support the proper mime-type syntax, eg. "text/plain"
+                    //but we have to use this incorrect syntax for the benefit of IE10+
+                    e.dataTransfer.setData('text', '');
+                
+                }, false);
+          
+            //dragover event to allow the drag by preventing its default
+            //ie. the default action of an element is not to allow dragging 
+            document.addEventListener('dragover', function(e)
+            {
+              if(item)
+              {
+                e.preventDefault();
+              }
+            
+            }, false);  
+          
+            //drop event to allow the element to be dropped into valid targets
+            document.addEventListener('drop', function(e)
+            {
+              //if this element is a drop target, move the item here 
+              //then prevent default to allow the action (same as dragover)
+              if(e.target.getAttribute('data-draggable') == 'target')
+              {
+                e.target.appendChild(item);
+                item.style.visibility = 'hidden';
+                e.preventDefault();
+              }
+            
+            }, false);
+            
+            //dragend event to clean-up after drop or abort
+            //which fires whether or not the drop target was valid
+            document.addEventListener('dragend', function(e)
+            {
+              item = null;
+                
+            }, false);
+            
+            })(); 
+        </script>
+    </head>
+
+    <body class="baohousebackground">
+        <!--Bao, starry eyes-->
+        <div class="box3 sb3">        
+            <p>
+                BAO: Correct!! *~* Hurray!!!
+                <br>
+                Now, let's mix the ingredients! :) Drag and drop them into the bowl, please. Let me know when you're DONE~
+            </p>
+        </div>
+
+        <div id="BaoMixing"> <!--ANIMATION FOR BAO SLIDING OVER TO THE LEFT AND TEXT AND DIALOGUE SLIDING OVER-->
+            <p>
+                <img src="../images/BaoCorrect1.png" width = 700 height = 500 alt="Correct! Bao">
+            </p>
+        </div>
+
+        <div data-draggable="target"></div>
+            <br>
+            <img data-draggable="item" src="../images/CakeMix.png" width="110" height="120" alt="Cake mix image">
+            <img data-draggable="item" src="../images/Milk.png" width="70" height="100" alt="Milk image">
+            <img data-draggable="item" src="../images/Eggs.png" width="80" height="50" alt="Eggs image">
+            <img data-draggable="item" src="../images/Strawberries.png" width="80" height="50" alt="Strawberries image">
+          
+        <form action="AW1Oven.html">
+            <button type="submit" class="button3"><b>DONE</b></button>
+        </form>
+
+    </body>
+</html>

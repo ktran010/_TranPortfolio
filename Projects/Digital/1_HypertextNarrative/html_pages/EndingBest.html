@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<!--CHANGE BACKGROUND IMAGE TO BAOS HOUSE-->
+
+
+<html lang="en">
+    <head>
+        <title>
+            Best Ending
+        </title>
+        <meta charset ="utf-8">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="../style/style.css">
+    </head>
+    <body class="baohousebackground">
+        <!--Bao, starry eyes-->
+        <div class="box3 sb3">        
+            <p id="txt_BestEnding">
+                BAO: <b>WOW WOW! LOOK AT OUR CAKE!!</b> ^~^ It turned out so amazing, I'm so happy!!! :D
+            </p>
+        </div>
+
+        <div id="BaoMixing"> <!--ANIMATION FOR BAO SLIDING OVER TO THE LEFT AND TEXT AND DIALOGUE SLIDING OVER-->
+            <p>
+                <img src="../images/BaoCorrect1.png" width = 700 height = 500 alt="Correct! Bao">
+            </p>
+        </div>
+        
+        <div>
+            <!--ON BUTTON CLICK (..)-->
+            <!--More text appears-->
+            <button id="btn_next_BestEnding" class="button3"><b>. . .</b></button>
+        </div>
+
+        <div>
+            <p>
+                <img src="../images/Cake1.png" width = 400 height = 400 alt="Best cake!">
+            </p>
+        </div>
+
+        <script>
+            let counter = 0;
+            const displayed_text = [
+            'BAO: Ooh, it looks so delicious I cannot wait to eat it!!',
+            'BAO: We did such a good job, hehe. We should dig in!',
+            ];
+
+            // Assign DOM elements to variables
+            const btn_next =  document.getElementById("btn_next_BestEnding");
+            const text_display = document.getElementById("txt_BestEnding");
+
+            // Attach listener to button    
+            btn_next.addEventListener("click", toggleText); 
+
+            function toggleText() {
+            counter += 1;
+
+            if (counter <= displayed_text.length) {
+         
+                // Update displayed text
+                text_display.innerHTML = displayed_text[counter -1];
+            }
+
+            if (counter === displayed_text.length) {
+                // Hide button
+                // btn_next.style.display = 'none';
+                btn_next.innerHTML = 'PLAY AGAIN';
+                document.getElementById("btn_next_BestEnding").onclick = function() {
+                location.href='1wakeup.html';
+                }
+            }
+        }
+        </script>
+
+    </body>
+</html>

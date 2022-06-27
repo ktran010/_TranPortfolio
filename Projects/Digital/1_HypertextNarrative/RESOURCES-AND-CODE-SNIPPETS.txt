@@ -1,0 +1,108 @@
+------------------------------------------------------------------------------------------------------------
+
+RESOURCES AND REFERENCES:
+
+------------------------------------------------------------------------------------------------------------
+Visuals -- Text, Layout, Notepad Image, Cake picture in Endings:
+
+https://www.w3schools.com/css/css3_gradients.asp
+https://www.w3schools.com/css/css3_text_effects.asp
+https://developer.mozilla.org/en-US/docs/Web/CSS/font-size
+https://www.codementor.io/@codementorteam/4-different-html-css-layout-techniques-to-create-a-site-85i9t1x34
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+https://www.rapidtables.com/lib/ogimages/notepad.jpg
+https://www.pngitem.com/middle/ihmiRwm_strawberry-shortcake-bxe-nh-strawberry-shortcake-cake-clipart/
+
+
+
+
+Borders:
+
+https://www.w3schools.com/css/css_border.asp
+
+
+
+
+Buttons:
+
+https://www.w3schools.com/css/css3_buttons.asp
+https://www.w3docs.com/snippets/html/how-to-create-an-html-button-that-acts-like-a-link.html
+
+
+
+
+Input Field:
+https://www.w3schools.com/cssref/sel_focus.asp
+https://www.w3schools.com/js/js_validation.asp
+
+
+
+
+Animation:
+
+https://raddy.co.uk/blog/fade-in-fade-out-animation-in-javascript-and-css/
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations
+https://www.w3schools.com/css/css3_transitions.asp
+
+
+
+
+Javascript -- learning onClick events, learning text-toggling:
+
+https://www.youtube.com/watch?v=XQEfWd1lh4Q&list=PL4cUxeGkcC9i9Ae2D9Ee1RvylH38dKuET&index=41
+https://www.w3schools.com/howto/howto_js_toggle_text.asp
+https://errorsea.com/how-to-change-input-text-value-onclick-event-javascript/
+https://errorsea.com/how-to-change-text-onclick-event-javascript/#Explanation
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------
+
+3RD PARTY CODE SNIPPETS:
+
+------------------------------------------------------------------------------------------------------------
+
+Code for changing text when clicking on (...) buttons:
+
+https://stackoverflow.com/questions/60688751/change-text-multiple-times-with-a-single-button-and-hide-the-button-for-the-last/60688905#60688905
+https://stackoverflow.com/questions/19140399/html-change-link-on-button-from-javascript-function
+https://stackoverflow.com/questions/10671174/changing-button-text-onclick
+
+
+
+
+Code for flex containers (numbers for the margins):
+
+https://www.w3schools.com/css/css3_flexbox_container.asp (flex display row editor)
+https://stackoverflow.com/questions/20626685/better-way-to-set-distance-between-flexbox-items
+
+
+
+
+Code for the modal:
+
+https://www.w3schools.com/howto/howto_css_modals.asp
+
+
+
+
+Code for the drag and drop:
+
+https://www.sitepoint.com/accessible-drag-drop/
+
+
+
+
+Code for the buttons -- the box-shadow rule and transform rule to give the "button push" visual:
+
+https://www.w3schools.com/howto/howto_css_animate_buttons.asp
+
+
+
+
+Code for speech bubble visual (the little triangle, and for getting started on creating the box):
+
+https://codingislove.com/css-speech-bubbles/

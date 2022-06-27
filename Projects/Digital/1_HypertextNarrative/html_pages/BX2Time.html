@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<!--CHANGE BACKGROUND IMAGE TO BAOS HOUSE-->
+
+
+<html lang="en">
+    <head>
+        <title>
+            BX2 - Time
+        </title>
+        <meta charset ="utf-8">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="../style/style.css">
+    </head>
+    <body class="baohousebackground">
+        <div class="box3 sb3">        
+            <p id="txt_BX2Time">
+                BAO: Success! And now we wait! >:3
+            </p>
+        </div>
+
+        <div class="flex-container">
+            <div>
+                <p>
+                    <img src="../images/BaoNeutral1.png" width = 700 height = 500 alt="Neutral Bao">
+                </p>
+            </div>
+            <div>
+                <!--ON BUTTON CLICK (...)-->
+                <button id="btn_next_BX2Time" class="button3"><b>. . .</b></button>
+            </div>
+        </div>
+
+        <script>
+            let counter = 0;
+            const displayed_text = [
+            'BAO: . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .',
+            'BAO: . . . . . . . . . . . . . . . . . . . . . . . . . . . . ',
+            'BAO: . . . . . . . . . . . . . . . . . . .',
+            'BAO: . . . . . . . . . . . . .',
+            'BAO: . . . . . . ',
+            'BAO: . . .',
+            'BAO: Oh!! The cake is ready! How did it turn out?'
+            ];
+
+            // Assign DOM elements to variables
+            const btn_next =  document.getElementById("btn_next_BX2Time");
+            const text_display = document.getElementById("txt_BX2Time");
+
+            // Attach listener to button    
+            btn_next.addEventListener("click", toggleText); 
+
+            function toggleText() {
+            counter += 1;
+
+            if (counter <= displayed_text.length) {
+         
+                // Update displayed text
+                text_display.innerHTML = displayed_text[counter -1];
+            }
+
+            if (counter === displayed_text.length) {
+                // Hide button
+                // btn_next.style.display = 'none';
+                document.getElementById("btn_next_BX2Time").onclick = function() {
+                location.href='EndingWorst.html';
+                }
+            }
+        }
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<!--CHANGE BACKGROUND IMAGE TO BAOS HOUSE-->
+
+
+<html lang="en">
+    <head>
+        <title>
+            Bao's House!
+        </title>
+        <meta charset ="utf-8">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="../style/style.css">
+
+    </head>
+    <body class="baohousebackground">
+        <!--Fade Everything to show background image-->
+        <!--Animation, Bao sprite slides in from left side to greet you-->
+        <div class="box3 sb3">        
+        <p id="txt"> <!--Fades in after 2 seconds-->
+            BAO: Hey hey hey!!! I am so happy you made it!
+        </p>
+        </div>
+
+        <div class="flex-container">
+            <div> 
+                <p>
+                    <img src="../images/BaoNeutral1.png" width = 700 height = 500 alt="Neutral Bao">
+                </p>
+            </div>
+            <div>
+                 <!--ON BUTTON CLICK (...)-->
+            <!-- More text appears -->
+                <button id="btn_next" class="button3" ><b>. . .</b></button>
+            </div>
+        </div>
+
+        <script>
+            let counter = 0;
+            const displayed_text = [
+            'BAO: I am really really excited to make some yummy strawberry cake!!!',
+            'BAO: Where is the recipe? We should take a look!!',
+            'You examine your pockets and...oh no..you forgot the recipe while you were rushing out the door...',
+            'You look up and see Bao staring at you, expectantly.',
+            'YOU: Bao...I forgot it at home...',
+            'BAO: Hehe~ that is okay! Anyways, you remember it, right?'
+            ];
+
+            // Assign DOM elements to variables
+            const btn_next =  document.getElementById("btn_next");
+            const text_display = document.getElementById("txt");
+
+            // Attach listener to button    
+            btn_next.addEventListener("click", toggleText); 
+
+            function toggleText() {
+            counter += 1;
+
+            if (counter <= displayed_text.length) {
+         
+                // Update displayed text
+                text_display.innerHTML = displayed_text[counter -1];
+            }
+
+            if (counter === displayed_text.length) {
+                // Hide button
+                // btn_next.style.display = 'none';
+                document.getElementById("btn_next").onclick = function() {
+                location.href='1rightbao.html';
+                }
+            }
+        }
+        </script>
+
+    </body>
+</html>
